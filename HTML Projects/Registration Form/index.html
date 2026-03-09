@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 950px;
+            width: 800px;
+            border: 2px solid grey;
+            margin: auto;
+            background-color: rgb(250, 250, 249);
+            }
+        .inside{
+           margin-left: 25%;
+        }
+        body{
+            background-color: #f9f4e3;
+        }
+       .submit{
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;;
+            cursor: pointer;
+            border-radius: 50%;
+            margin-top: 2%;
+        }
+        .reset{
+            background-color: #f44336; /* Red */
+            border: none;
+            color: white;
+            padding: 10px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin-left: 4%;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <form action="/action.php">
+
+    <div class="box">
+     <img src="/images/register.jpg" alt="" height="180px" style="margin-left: 32%;">
+     <br>
+     <div class="inside">
+        <h2>Student Information</h2>
+        <p>Enter Your Name:-<input type="text" placeholder="Enter your name"></p>
+        <p>Enter Your Father's Name:-<input type="text" placeholder="Enter your Father's name"></p>
+        <p>Enter Your Mother's Name:-<input type="text" placeholder="Enter your Mother's name"></p>
+        <p>Enter your DOB:-<input type="date"></p>
+        <P>Enter Your Phone number:-<input type="number"></P>
+        <p>Enter Your Email:-<input type="email"></p>
+        <p>Education Qualification:-
+            <input type="radio" id="111" name="qualification" value="10th">
+            <label for="111">10<sup>th</sup></label>
+            <input type="radio" id="222" name="qualification" value="12th">
+            <label for="222">12<sup>th</sup></label>
+            <input type="radio" id="333" name="qualification" value="graduate">
+            <label for="333">Graduate</label>
+            <input type="radio" id="444" name="qualification" value="post graduate">
+            <label for="444">Post Graduate</label>  
+        </p>
+        <Select>
+            <option value="Enter Your city">------Enter Your City------</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Rajesthan">Rajesthan</option>
+            <option value="Jammu&Kashmir">Jammu&Kashmir</option>
+            <option value="Uttar pardesh">Uttar Pardesh</option>
+            <option value="Himachal">Himachal</option>
+            <option value="Kerela">Kerela</option>
+        </Select>
+        <p>Select Your Course:-</p>
+        <input type="checkbox" value="Web Devlopment">Web Devlopment
+        <br>
+        <input type="checkbox" value="App development">App Devlopment
+        <br>
+        <input type="checkbox" value="Artificial Intelligence">Artificial Intelligence
+        <br>
+        <input type="checkbox" value="Manual Testing">Manual Testing
+        <br>
+        <input type="checkbox" value="Cyber security">Cyber Security
+        <br>
+        <input type="checkbox" value="Machine Learning">Machine Learning
+
+        <p>Enter Your Address:-</p><textarea placeholder="Enter Your Address Here:-" rows="8" cols="59"></textarea>
+        <br>
+        <button value="submit" class="submit">submit</button>
+        <button value="reset" class="reset">reset</button>
+     </div>
+    </div>
+</form>
+</body>
+</html>
